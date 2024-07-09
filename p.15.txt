@@ -1,0 +1,42 @@
+/*program to demonstrate multilevel in inheritance*/
+class A
+{
+	int x=10;
+	public void display()
+	{
+		System.out.println("x="+x);
+		
+	}
+}
+class B extends A
+{
+	int y=60;
+	public void display()
+	{
+		super.display();
+		System.out.println("y="+y);
+	}
+}
+class C extends B
+{
+	int z=90;
+	public void display()
+	{
+		super.display();
+		System.out.println("z="+z);
+	}
+}
+public class MIDemo 
+{
+	public static void main (String args[])
+	{
+		C c1=new C();
+		c1.display();
+	}
+}
+
+OUT PUT :
+x=10
+y=60
+z=90
+

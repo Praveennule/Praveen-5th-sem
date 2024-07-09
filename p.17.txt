@@ -1,0 +1,42 @@
+/*program to demonstrate single inheritance*/
+class A
+{
+	int x=10;
+	public void print()
+	{
+		System.out.println("x="+x);
+	}
+}
+class B extends A
+{
+	int y=200;
+	public void print()
+	{
+		super.print();
+		System.out.println("y="+y);
+		
+	}
+	
+}
+public class SIDemo 
+{
+	public static void main(String args[])
+	{
+		B b1=new B();
+		b1.print();
+		
+	}
+		
+}
+
+
+OUT PUT :
+
+x=10
+y=200
+
+
+
+	
+
+
